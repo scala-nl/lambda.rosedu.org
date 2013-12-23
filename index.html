@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="fullheight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta property="og:site_name" content="λ.rosedu.org">
+  <meta property="og:title" content="λ.rosedu.org">
+  <meta property="og:description" content="Tweλve days of in-depth, hands-on functional programming with Haskell, Scala and Clojure">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://lambda.rosedu.org/">
+  <meta property="og:image" content="http://lambda.rosedu.org/images/logos/lambda_logo.png">
+  <title>λ.rosedu.org</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fontface.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+</head>
+<body class="fullheight">
+<div class="flexboxlayout fullheight">
+  <div class="wrapper">
+    <div class="row-fluid">
+      <div class="span3" id="menu_wrapper">
+        <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="images/transparent.png" below -->
+        <h2 id="menu_header" class="logotoppadding"><img id="lambda_logo" src="images/transparent.png" style="max-width: 100%;"></h2>
+        <div id="menu">
+          <ul style="font-family: 'OpenSansRegular';">
+            <li class="lambdamenuitem" data-id="#acasa">     <a href="#acasa">Acasă</a>         </li>
+            <li class="lambdamenuitem" data-id="#structura"> <a href="#structura">Structură</a> </li>
+            <li class="lambdamenuitem" data-id="#cursanti">  <a href="#cursanti">Cursanți</a>   </li>
+            <li class="lambdamenuitem" data-id="#meta">      <a href="#meta">Meta</a>           </li>
+          </ul>
+        </div> <!-- id="menu" -->
+      </div> <!-- id="menu_wrapper" -->
+
+      <div class="main span8 offset1">
+        <span id="top_of_content"></span>
+        <div id="acasa_content" class="visualstate">
+          <h2 id="lambda_heading" style="margin-top: 12px; margin-bottom: 20px;">Tweλve days of in-depth, hands-on functional programming with Haskell, Scala and Clojure</h2>
+          <h3>Despre workshop</h3>
+          <p>Ca urmare a succesului <a href="http://workshop.rosedu.org/2013/sesiuni/haskell" target="_blank">primului curs practic de programare funcțională</a> organizat în cadrul ROSEdu Summer Workshops în vara anului 2013, ne bucurăm să te anunțăm că pentru 2014 pregătim o a doua ediție extinsă, care se va desfășura pe parcursul a 12 zile, câte 4 ore pe zi.</p>
+          <p>Ediția 2014 va avea loc cel mai probabil in perioada 7-18 iulie (data precisă a începerii cursului va fi definitivată la mijlocul lunii iunie). Workshop-ul este gratuit, însă numărul de locuri este limitat.</p>
+          <p>Având în vedere că pentru înscriere este necesară rezolvarea câtorva probleme de programare și de logică, am considerat oportun să dăm startul la înscrieri încă din primele luni ale anului 2014.</p>
+          <br>
+          <h3>Înscriere</h3>
+          <p>Pentru înscriere, completează, te rugăm, <!-- <a href="" target="_blank">acest formular</a> --> TODO-acest-formular-TODO.</p>
+          <p>Dacă ai întrebări generale legate de înscriere, lasă un comentariu <a href="https://github.com/dserban/lambda2014summer/issues/1" target="_blank">aici</a>.</p>
+        </div> <!-- id="acasa_content" -->
+
+        <div id="structura_content" class="visualstate">
+          <table class="table">
+            <tr>
+              <td colspan=2>
+                <h3>Structura cursului</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day One</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>What is Haskell?</strong><br>
+                Why Should I Learn Haskell?<br>
+                History<br>
+                Tools<br>
+                <br>
+                <strong>Functions</strong><br>
+                Basic Functions<br>
+                Pure Functions<br>
+                Recursion<br>
+                Lists<br>
+                List Functions<br>
+                Tuples<br>
+                Pattern Matching<br>
+                Guards<br>
+                case<br>
+                let..in and where<br>
+                Whitespace<br>
+                Lazy Evaluation<br>
+                Thunks and Infinite Lists<br>
+                <br>
+                <strong>Higher Order Functions</strong><br>
+                Functions as Values<br>
+                Partial Application / uncurry<br>
+                map<br>
+                filter<br>
+                Folds / Scans / Unfolds<br>
+                zipWith<br>
+                Lambda Expressions<br>
+                Infix Operators, Prefix Notation<br>
+                Prefix Functions, Infix Notation
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Two</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>Types</strong><br>
+                Haskell's Type System<br>
+                Exploring Types in GHCi<br>
+                Explicit Types<br>
+                Type Inference<br>
+                When To Use Explicit Types<br>
+                Polymorphism<br>
+                Typeclass Constraints<br>
+                Avoiding Errors with the Maybe Type<br>
+                Error Handling with the Either Type<br>
+                <br>
+                <strong>Custom Types</strong><br>
+                Type Synonyms<br>
+                newtype<br>
+                Records<br>
+                Algebraic Data Types<br>
+                Type Constructors<br>
+                Data Constructors<br>
+                Parameterized Types
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Three</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>Typeclasses</strong><br>
+                Typeclass Instances<br>
+                Instances for Parameterized Types<br>
+                Deriving Typeclass Instances<br>
+                Defining Typeclasses<br>
+                Subclasses<br>
+                <br>
+                <strong>I/O</strong><br>
+                Hello World<br>
+                I/O Actions<br>
+                Do Blocks<br>
+                I/O Values<br>
+                The return Function<br>
+                Some Useful I/O Actions<br>
+                Organizing Your Programs (Functional Core, Imperative Shell)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Four</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>HackDay</strong><br>
+                Pacman in Haskell (A Simplified Console Game)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Five</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>Graphics</strong><br>
+                The Gloss Library<br>
+                Pacman in Haskell with a GUI
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Six</strong>
+                <br>
+                <img class="scala_logo" src="">
+              </td>
+              <td>
+                <strong>Scala #1</strong><br>
+                Values and Data Types<br>
+                Type Inference<br>
+                Expressions<br>
+                Conditional Expressions<br>
+                Compound Expressions<br>
+                Functions as Objects<br>
+                Blocks and Lexical Scope<br>
+                Functions and Closures<br>
+                Control Abstraction<br>
+                Match Expressions<br>
+                Case Classes<br>
+                Type Parameterization<br>
+                Currying<br>
+                Anonymous Functions<br>
+                map and reduce<br>
+                Tail Recursion<br>
+                For Expressions
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Seven</strong>
+                <br>
+                <img class="scala_logo" src="">
+              </td>
+              <td>
+                <strong>Scala #2</strong><br>
+                Types and Pattern Matching<br>
+                Case Classes and Pattern Matching<br>
+                Collections<br>
+                Mutability and Immutability<br>
+                Lists and Buffers<br>
+                Working with Lists<br>
+                Functions on Lists<br>
+                Pairs and Tuples<br>
+                Traits<br>
+                Using Traits<br>
+                Sequences<br>
+                Lazy Evaluation<br>
+                Computing with Infinite Sequences<br>
+                Set and Map Containers<br>
+                For-Comprehensions<br>
+                Interoperability with Java<br>
+                Invoking Java Code<br>
+                Actors and Concurrency / Akka<br>
+                An Introduction to scalaz<br>
+                Idiomatic Scala Coding Style
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Eight</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>Advanced Topics #1</strong><br>
+                Functors<br>
+                Applicative Functors
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Nine</strong>
+                <br>
+                <img class="haskell_logo" src="">
+              </td>
+              <td>
+                <strong>Advanced Topics #2</strong><br>
+                Monads<br>
+                The Lens Library<br>
+                Combinator Parsing<br>
+                Idiomatic Haskell Coding Style
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Ten</strong>
+                <br>
+                <img class="clojure_logo" src="">
+              </td>
+              <td>
+                <strong>Overview and the REPL</strong><br>
+                Why Clojure?<br>
+                Clojure and ClojureScript<br>
+                Evaluation and the REPL<br>
+                Operation Forms<br>
+                Structure vs. Semantics<br>
+                Literals<br>
+                Data Structures<br>
+                Metadata<br>
+                Reader Macros<br>
+                Leiningen Directory Structure<br>
+                <br>
+                <strong>Functions</strong><br>
+                Invoking Functions<br>
+                Naming Functions<br>
+                let<br>
+                Multiple Arity<br>
+                Variadic Functions<br>
+                apply<br>
+                Closures<br>
+                Invoking Java Code<br>
+                Chaining Access<br>
+                Java Methods vs. Functions<br>
+                <br>
+                <strong>Namespaces</strong><br>
+                Why Namespaces?<br>
+                Namespace-Qualified Vars<br>
+                Namespace-Qualified Keywords<br>
+                Namespaces in the REPL<br>
+                Namespace Operations<br>
+                require<br>
+                use<br>
+                import<br>
+                Namespaces and Files<br>
+                ns Declaration<br>
+                ns :require<br>
+                ns :use<br>
+                ns :import<br>
+                Private Vars<br>
+                the-ns<br>
+                Namespace Introspection
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Eλeven</strong>
+                <br>
+                <img class="clojure_logo" src="">
+              </td>
+              <td>
+                <strong>Collections</strong><br>
+                Working With Data<br>
+                Immutability<br>
+                Persistent Data Structures<br>
+                Clojure Collections<br>
+                Lists<br>
+                Vectors<br>
+                Maps<br>
+                Nested Map Access<br>
+                Sets<br>
+                <br>
+                <strong>Destructuring</strong><br>
+                Sequential Destructuring<br>
+                Sequential Destructuring with &<br>
+                Ignoring Destructured Values with _<br>
+                Associative Destructuring<br>
+                Associative Destructuring with :keys<br>
+                Using :or for Default Values<br>
+                Named Arguments
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Day Tweλve</strong>
+                <br>
+                <img class="clojure_logo" src="">
+              </td>
+              <td>
+                <strong>Sequences</strong><br>
+                Sequence API<br>
+                Sequences Over Structures<br>
+                Sequences Over Functions<br>
+                Sequences in the REPL<br>
+                Sequence Library<br>
+                Creating a Sequence<br>
+                Using a Seq<br>
+                <br>
+                <strong>Flow Control</strong><br>
+                Statements vs. Expressions<br>
+                Flow Control Expressions<br>
+                Truthiness<br>
+                if<br>
+                if/do<br>
+                if-let<br>
+                cond<br>
+                condp<br>
+                case<br>
+                Recursion and Iteration<br>
+                doseq<br>
+                dotimes<br>
+                while<br>
+                for<br>
+                loop<br>
+                defn/recur<br>
+                recur for Recursion<br>
+                Exception Handling<br>
+                Throwing Exceptions<br>
+                with-open<br>
+                <br>
+                <strong>Idiomatic Clojure Coding Style</strong>
+              </td>
+            </tr>
+          </table>
+        </div> <!-- id="structura_content" -->
+
+        <div id="cursanti_content" class="visualstate">
+          <h3>Cursanți</h3>
+          <p>Cursanții vor fi anunțați aici cel târziu cu 2 zile înainte de începerea workshop-ului. Te așteptăm să te înscrii!</p>
+        </div> <!-- id="cursanti_content" -->
+
+        <div id="meta_content" class="visualstate">
+          <h3>Contact</h3>
+          <p>Ne găsești pe canalul de IRC #rosedu pe Freenode sau poți iniția o conversație cu noi <a href="https://github.com/dserban/lambda2014summer/issues/new" target="_blank">aici</a>.</p>
+          <br>
+          <h3>Organizatori și organizare</h3>
+          <p>Acest workshop vă este adus de <a href="http://www.rosedu.org/" target="_blank">comunitatea ROSEdu</a>.</p>
+          <br>
+          <h3>Credits</h3>
+          <p>(organizatori și prezentatori, în ordine alfabetică):
+          <br>
+          Victor Cleja, Mihnea Dobrescu-Balaur, Mihai Maruseac, Lucian Mogoșanu, Ionuț G. Stan, Dan Șerban și prietenii.</p>
+          <br>
+          <h3>Condiții și drepturi de folosire</h3>
+          <p>ROSEdu deține drepturile asupra întregului conținut al acestui site.
+             <br>
+             ROSEdu, în calitate de deținător al drepturilor de autor, eliberează conținutul acestui site sub licența <a href="http://www.gnu.org/licenses/fdl-1.2.html" target="_blank">GNU Free Documentation License v1.2</a>. În acest sens, accesul, distribuția și modificarea conținutului sunt libere, cu condiția păstrării autorilor inițiali. Se recomandă folosirea sintagmei "Documentație originală scrisă de membrii asociației studențești ROSEdu".
+             <br>
+             Pentru informații suplimentare, te așteptăm pe <a href="http://lists.rosedu.org/listinfo/rosedu-general" target="_blank">lista generală a ROSEdu</a> sau pe <a href="irc://irc.freenode.net">canalul IRC #rosedu</a>.
+          </p>
+        </div> <!-- id="meta_content" -->
+
+        <h3>&nbsp;</h3>
+
+        <p class="extra_buttons" id="tap_target_acasa">
+          <button class="btn greybutton lambdamenuitem" data-id="#acasa">
+            <strong>Acasă</strong>
+          </button>
+        </p>
+        <p class="extra_buttons">
+          <button class="btn greybutton lambdamenuitem" data-id="#structura">
+            <strong>Structură</strong>
+          </button>
+        </p>
+        <p class="extra_buttons">
+          <button class="btn greybutton lambdamenuitem" data-id="#cursanti">
+            <strong>Cursanți</strong>
+          </button>
+        </p>
+        <p class="extra_buttons">
+          <button class="btn greybutton lambdamenuitem" data-id="#meta">
+            <strong>Meta</strong>
+          </button>
+        </p>
+      </div> <!-- class="main span8 offset1" -->
+    </div> <!-- class="row-fluid" -->
+  </div> <!-- class="wrapper" -->
+
+  <div style="display: none;">
+    <img id="arrow_hover" src="">
+    <img id="gradient" src="">
+  </div>
+</div> <!-- class="flexboxlayout fullheight" -->
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/main.js"></script>
+
