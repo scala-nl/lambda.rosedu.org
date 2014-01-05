@@ -59,7 +59,7 @@ Zepto(function($) {
     ".scala_logo":   "images/logos/scala_logo.png",
     ".clojure_logo": "images/logos/clojure_logo.png",
     "#arrow_hover":  "images/arrow-hover.png",
-    "#gradient":     "images/blue-gradient.png"
+    "#gradient":     "images/gradient.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
